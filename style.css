@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700;900&display=swap');
+
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bg-body-blue {
+    background: -webkit-gradient(linear, left top, right bottom, from(#B2EDFF), to(#0075FF)) fixed;
+    color: #fff;
+}   
+
+.bg-body-white {
+    background-color: #F6F6F6;
+}
+
+p, span {
+    color: #3B454E;
+}
+
+ul {
+    padding-left: 1.063rem;
+}
+
+/* PAG HOME */
+div.principal {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 4.875rem;
+    font-weight: 600;
+    line-height: 3.125rem;
+}
+
+.subtitle {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.text {
+    font-size: 1rem;
+}
+
+.footer-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* Pag informacoes */
+
+.container-principal {
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.camera {
+    display: flex;
+    justify-content: center;
+}
+
+.camera video {
+    border-radius: 10px;
+    border: 3px solid #0478FF;
+}
+
+img, video {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.btn-camera {
+    background-color: #0478FF;
+    border-radius: 100px;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+#screenshots img {
+    border: 3px solid #0478FF;
+    border-radius: 10px;
+}
