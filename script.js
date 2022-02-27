@@ -14,16 +14,8 @@ if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
     // configurações do vídeo
     const configuracoes = {
         video: {
-            width: {
-                min: 320,
-                ideal: 375,
-                max: 2560,
-            },
-            height: {
-                min: 500,
-                ideal: 500,
-                max: 500,
-            },
+            width: screen.height,
+    height: screen.width
         },
     };
 
@@ -67,8 +59,8 @@ if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
             videoStream = await navigator.mediaDevices.getUserMedia(configuracoes);
             video.srcObject = videoStream;
         } catch (err) {
-            alert(err);
-            alert("Não foi possível acessar a câmera");
+            console.log(err);
+            console.log("Não foi possível acessar a câmera");
         }
     }
 
